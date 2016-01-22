@@ -5,6 +5,6 @@ public interface ArithmeticOperationsService {
 	public int factorial(int number);
 	
 	///addd  function
-	public int add(int num1,num2);
+	public int add(int num1,int num2);
 	///asdfhaklbvf
 }
