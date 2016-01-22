@@ -4,7 +4,7 @@ public interface ArithmeticOperationsService {
 	public void prineNumbers(int num);
 	public int factorial(int number);
 	
-	///addd
+	///addd  function
 	public int add(int num1,num2);
 	///asdfhaklbvf
 }
