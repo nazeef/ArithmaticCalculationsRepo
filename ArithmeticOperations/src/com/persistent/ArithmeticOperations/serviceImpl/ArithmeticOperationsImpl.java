@@ -1,5 +1,5 @@
 package com.persistent.ArithmeticOperations.serviceImpl;
 
-public class ArithmeticOperationsImpl {
+public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 
 }
