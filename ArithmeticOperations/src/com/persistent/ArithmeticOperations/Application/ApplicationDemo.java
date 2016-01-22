@@ -9,6 +9,7 @@ public class ApplicationDemo {
 		// TODO Auto-generated method stub
 		//////////
 		System.out.println("Nazeef print");
+		System.out.println("Nazeef print");
 	}
 
 }
