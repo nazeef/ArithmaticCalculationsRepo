@@ -19,6 +19,7 @@ public class ApplicationDemo {
 		 System.out.println("Factorial of " + n + " is " + fact.factorial(n));
 		 
 		System.out.print("vaibhav");
+		System.out.print("conflict");
 		//vgdgfsdf
 		
 
