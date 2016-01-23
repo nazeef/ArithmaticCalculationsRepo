@@ -10,18 +10,20 @@ public class ApplicationDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//////////
-		 ArithmeticOperationsImpl fact = new  ArithmeticOperationsImpl();
+		
+		 ArithmeticOperationsImpl arithmeticOperations = new  ArithmeticOperationsImpl();
+		 
+		 //----------handling input-----------------------
+		 
 		 System.out.println("Enter the number : ");
 		 Scanner in = new Scanner(System.in);
-		 int n = in.nextInt();
-		 System.out.println("Factorial of " + n + " is " + fact.factorial(n));
+		 int num = in.nextInt();
 		 
-		
-		System.out.print("conflict");
-		//vgdgfsdf
-		
+		 //--------------------------------------------------
+		 
+		 System.out.println("Factorial of " + num + " is " + arithmeticOperations.factorial(num));
+		 
+		 arithmeticOperations.primeNumbers(num);
 
 	}
 
