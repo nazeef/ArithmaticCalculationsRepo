@@ -36,10 +36,13 @@ public class ApplicationDemo {
 		 System.out.println("square root of " + number + " = " + arithmeticOperations.squareRoot(number));
 
 
+
 		// TODO Auto-generated method stub
-		//////////
 		System.out.println("Nazeef print");
 		System.out.println("Nazeef print");
+
+
+		 System.out.println("-----demo------");
 
 	}
 
