@@ -6,7 +6,9 @@ public interface ArithmeticOperationsService {
 	
 	public int factorial(int number);
 	
-	///addd  function
 	public int add(int num1,int num2);
 	
+	public int product(int firstNumber,int secondNumber);
+
+	public void OddEven(int number);
 }

@@ -39,6 +39,23 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	
 	public int add(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return 0;
+		return num1+num2;
+	}
+	
+	//---- product of numbers ------//
+ 
+	public int product(int firstNumber,int secondNumber){
+		
+		return Math.multiplyExact(firstNumber,secondNumber);
+	}
+
+	
+	
+	//------ classification between odd and even ------ //
+	public void OddEven(int number){
+		if(number % 2 == 0)
+			System.out.println("\n"+ number + " is Even");
+		else
+			System.out.println("\n"+ number + " is Odd");
 	}
 }
