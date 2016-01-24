@@ -4,6 +4,7 @@ import com.persistent.ArithmeticOperations.service.ArithmeticOperationsService;
 
 public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 
+<<<<<<< HEAD
 	public int factorial(int number){
 		//System.out.println("scheweta naik ");
 		if(number==1 || number ==0)
@@ -70,4 +71,11 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		return Math.sqrt(firstNumber);
 	}
 	
+=======
+	public void prineNumbers(int num) {
+		// TODO Auto-generated method stub
+		
+	}
+
+>>>>>>> refs/remotes/origin/nazeef-master
 }

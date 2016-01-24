@@ -10,6 +10,7 @@ public class ApplicationDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		
 		 ArithmeticOperationsImpl arithmeticOperations = new  ArithmeticOperationsImpl();
 		 
@@ -34,6 +35,12 @@ public class ApplicationDemo {
 
 		 System.out.println("square root of " + number + " = " + arithmeticOperations.squareRoot(number));
 
+=======
+		// TODO Auto-generated method stub
+		//////////
+		System.out.println("Nazeef print");
+		System.out.println("Nazeef print");
+>>>>>>> refs/remotes/origin/nazeef-master
 	}
 
 }
