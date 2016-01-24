@@ -31,8 +31,13 @@ public class ApplicationDemo {
 		 
 		 System.out.println("product of " + num + "*" + number + " = " + arithmeticOperations.product(num,number));
 		 
-		 System.out.println("division of " + num + "/" + number + " = " + arithmeticOperations.divide(num,number));
-
+		 try{
+			 System.out.println("division of " + num + "/" + number + " = " + arithmeticOperations.divide(num,number));
+		 }
+		 catch(ArithmeticException ex){
+			 System.out.println("-------->   Caught Exception :"+ex.getMessage());
+		 }
+		 
 		 System.out.println("square root of " + number + " = " + arithmeticOperations.squareRoot(number));
 
 
