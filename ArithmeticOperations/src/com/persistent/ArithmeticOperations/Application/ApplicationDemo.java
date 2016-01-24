@@ -15,15 +15,20 @@ public class ApplicationDemo {
 		 
 		 //----------handling input-----------------------
 		 
-		 System.out.println("Enter the number : ");
+		 System.out.println("Enter the 2 numbers : ");
 		 Scanner in = new Scanner(System.in);
 		 int num = in.nextInt();
-		 
+		 int number=in.nextInt();
+		 in.close();
 		 //--------------------------------------------------
 		 
 		 System.out.println("Factorial of " + num + " is " + arithmeticOperations.factorial(num));
 		 
 		 arithmeticOperations.primeNumbers(num);
+		
+		 arithmeticOperations.OddEven(number);
+		 
+		 System.out.println("product of " + num + "*" + number + " is " + arithmeticOperations.product(num,number));
 
 	}
 
