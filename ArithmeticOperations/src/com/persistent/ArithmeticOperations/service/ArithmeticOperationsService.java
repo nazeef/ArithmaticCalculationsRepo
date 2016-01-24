@@ -11,4 +11,8 @@ public interface ArithmeticOperationsService {
 	public int product(int firstNumber,int secondNumber);
 
 	public void OddEven(int number);
+	
+	public double divide(int firstNumber,int secondNumber);
+	
+	public double squareRoot(int firstNumber);
 }

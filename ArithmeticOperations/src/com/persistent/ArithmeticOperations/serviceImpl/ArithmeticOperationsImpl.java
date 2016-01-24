@@ -58,4 +58,16 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		else
 			System.out.println("\n"+ number + " is Odd");
 	}
+	
+	//------division of numbers------------//
+	
+	public double divide(int firstNumber,int secondNumber){
+		return Math.floorDiv(firstNumber, secondNumber);
+	}
+	
+	//---------square root of a number ----------//
+	public double squareRoot(int firstNumber){
+		return Math.sqrt(firstNumber);
+	}
+	
 }
