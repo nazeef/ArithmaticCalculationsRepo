@@ -28,7 +28,11 @@ public class ApplicationDemo {
 		
 		 arithmeticOperations.OddEven(number);
 		 
-		 System.out.println("product of " + num + "*" + number + " is " + arithmeticOperations.product(num,number));
+		 System.out.println("product of " + num + "*" + number + " = " + arithmeticOperations.product(num,number));
+		 
+		 System.out.println("division of " + num + "/" + number + " = " + arithmeticOperations.divide(num,number));
+
+		 System.out.println("square root of " + number + " = " + arithmeticOperations.squareRoot(number));
 
 	}
 
