@@ -34,6 +34,7 @@ public class ApplicationDemo {
 
 		 System.out.println("square root of " + number + " = " + arithmeticOperations.squareRoot(number));
 
+		 System.out.println("-----demo------");
 	}
 
 }
