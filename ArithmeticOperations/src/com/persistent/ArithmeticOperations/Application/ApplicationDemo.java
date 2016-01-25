@@ -11,20 +11,30 @@ public class ApplicationDemo {
 	 */
 	public static void main(String[] args) {
 
-		
+		 Scanner in = new Scanner(System.in);
 		 ArithmeticOperationsImpl arithmeticOperations = new  ArithmeticOperationsImpl();
 		 
 		 //----------handling input-----------------------
+		 System.out.println("Enter a number to reverse: ");
+		 int n1 = in.nextInt();
+		 System.out.println("Reverse of " + n1 + " is " + arithmeticOperations.reverse(n1));
+		 System.out.println(n1 + " is " + arithmeticOperations.palindrome(n1));
+		 
+		 System.out.println("Enter a number to find the factorial: ");
+		 int n = in.nextInt();
+		 System.out.println("Factorial of " + n + " is " + arithmeticOperations.factorial(n));
 		 
 		 System.out.println("Enter the 2 numbers : ");
-		 Scanner in = new Scanner(System.in);
+		
 		 int num = in.nextInt();
 		 int number=in.nextInt();
 		 in.close();
 		 //--------------------------------------------------
 		 
-		 System.out.println("Factorial of " + num + " is " + arithmeticOperations.factorial(num));
 		 
+		 
+		 
+		
 		 arithmeticOperations.primeNumbers(num);
 		
 		 arithmeticOperations.OddEven(number);

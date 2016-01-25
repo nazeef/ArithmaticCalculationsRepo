@@ -20,5 +20,7 @@ public interface ArithmeticOperationsService {
 	
 	public int quot(int num1,int num2);
 	
+	public int reverse(int number);
 	
+	public String palindrome(int number);
 }
