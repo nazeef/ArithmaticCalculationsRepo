@@ -5,6 +5,7 @@ import com.persistent.ArithmeticOperations.service.ArithmeticOperationsService;
 public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 
 
+	//------factorial-------//
 	public int factorial(int number){
 		
 		if(number==1 || number ==0)
