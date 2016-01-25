@@ -43,6 +43,23 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		return num1+num2;
 	}
 	
+	
+	//remainder 
+	public int rem(int num1, int num2) {
+		// TODO Auto-generated method stub
+		return num1num2;
+	}
+	
+	//quotient
+	public int quot(int num1, int num2) {
+		// TODO Auto-generated method stub
+		return num1/num2;
+	}
+	
+	
+	
+	
+	
 	//---- product of numbers ------//
  
 	public int product(int firstNumber,int secondNumber){
