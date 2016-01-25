@@ -37,20 +37,20 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		}
 	}
 
-	
+	//-----------add--------------//
 	public int add(int num1, int num2) {
 		// TODO Auto-generated method stub
 		return num1+num2;
 	}
 	
 	
-	//remainder 
+	//-----------remainder----------// 
 	public int rem(int num1, int num2) {
 		// TODO Auto-generated method stub
 		return num1%num2;
 	}
 	
-	//quotient
+	//------------quotient----------//
 	public int quot(int num1, int num2) {
 		// TODO Auto-generated method stub
 		return num1/num2;
@@ -88,6 +88,7 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		return Math.sqrt(firstNumber);
 	}
 	
+	//--------reverse the digits in a number---//
 	public int reverse(int number) {
 		int rev=0;
 		while(number>0){
@@ -99,6 +100,7 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	}
 
 
+	//-----------palindrome---------------//
 	public String palindrome(int number) {
 		// TODO Auto-generated method stub
 		if(number==reverse(number))
