@@ -38,6 +38,9 @@ public class ApplicationDemo {
 			 System.out.println("-------->   Caught Exception :"+ex.getMessage());
 		 }
 		 
+		 
+		 
+		 
 		 System.out.println("square root of " + number + " = " + arithmeticOperations.squareRoot(number));
 
 
@@ -46,6 +49,20 @@ public class ApplicationDemo {
 		System.out.println("Nazeef print");
 		System.out.println("Nazeef print");
 
+		
+		//calculate sum
+		 System.out.println("Enter the 2 numbers : ");
+		 Scanner inp = new Scanner(System.in);
+		 int num1 = in.nextInt();
+		 int num2=in.nextInt();
+		 in.close();
+		 
+		System.out.println("sum of " + num1 + "+" + num2 + " = " + arithmeticOperations.add(num1, num2));
+		 
+		 
+		 
+		 
+		 
 
 		 System.out.println("-----demo------");
 
