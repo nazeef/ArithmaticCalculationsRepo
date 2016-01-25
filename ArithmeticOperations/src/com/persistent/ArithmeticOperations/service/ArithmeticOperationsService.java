@@ -15,4 +15,10 @@ public interface ArithmeticOperationsService {
 	public double divide(int firstNumber,int secondNumber);
 	
 	public double squareRoot(int firstNumber);
+	
+	public int rem(int num1,int num2);
+	
+	public int quot(int num1,int num2);
+	
+	
 }
