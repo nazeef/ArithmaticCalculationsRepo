@@ -23,4 +23,8 @@ public interface ArithmeticOperationsService {
 	public int reverse(int number);
 	
 	public String palindrome(int number);
+	
+	public int lcm(int num1, int num2);
+	
+	public int gcd(int num1, int num2);
 }
