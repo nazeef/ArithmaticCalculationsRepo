@@ -72,10 +72,4 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	}
 	
 
-	public void prineNumbers(int num) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
 }
