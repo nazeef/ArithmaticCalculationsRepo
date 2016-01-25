@@ -6,7 +6,7 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 
 
 	public int factorial(int number){
-		//System.out.println("scheweta naik ");
+		
 		if(number==1 || number ==0)
 			return 1;
 		else
@@ -47,7 +47,7 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	//remainder 
 	public int rem(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return num1/num2;
+		return num1%num2;
 	}
 	
 	//quotient
