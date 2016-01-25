@@ -47,7 +47,7 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	//remainder 
 	public int rem(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return num1num2;
+		return num1/num2;
 	}
 	
 	//quotient
@@ -87,6 +87,26 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	public double squareRoot(int firstNumber){
 		return Math.sqrt(firstNumber);
 	}
+	
+	public int reverse(int number) {
+		int rev=0;
+		while(number>0){
+			int r = number%10;
+			rev = r + rev*10;
+			number = number/10;
+		}
+		return rev;
+	}
+
+
+	public String palindrome(int number) {
+		// TODO Auto-generated method stub
+		if(number==reverse(number))
+			return "a Palindrome";
+		else
+			return "not a Palindrome";
+	}
+
 	
 
 }
