@@ -109,6 +109,18 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 			return "not a Palindrome";
 	}
 
+	//---- Least Common Multiple ----\\
+	public int lcm(int num1, int num2){
+		return num1/gcd(num1,num2)*num2;
+	}
+	
+	//---- Greatest Common Divisible ----\\
+	public int gcd(int num1, int num2){
+		if(num2 == 0)
+			return num1;
+		else
+			return gcd(num2, num1%num2);
+	}
 	
 
 }
