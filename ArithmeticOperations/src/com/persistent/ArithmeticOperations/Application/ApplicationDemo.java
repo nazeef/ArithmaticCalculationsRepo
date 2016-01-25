@@ -31,9 +31,6 @@ public class ApplicationDemo {
 		 in.close();
 		 //--------------------------------------------------
 		 
-		 
-		 
-		 
 		
 		 arithmeticOperations.primeNumbers(num);
 		
@@ -56,10 +53,8 @@ public class ApplicationDemo {
 
 
 		// TODO Auto-generated method stub
-		System.out.println("Nazeef print");
-		System.out.println("Nazeef print");
 
-		
+
 		//calculate sum
 		 System.out.println("Enter the 2 numbers : ");
 		 Scanner inp = new Scanner(System.in);
