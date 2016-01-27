@@ -61,7 +61,7 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		    	return " not armstrong number";   
 		   } 
 		
-	}
+	
 	
 	
 	//-----------remainder----------// 
