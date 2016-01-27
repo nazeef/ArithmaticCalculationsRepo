@@ -82,7 +82,7 @@ public class ApplicationDemo {
 		
 		System.out.println("\n****Finding LCM of two numbers****\n\nEnter first number : ");
 		int a1 = sc.nextInt();
-		System.out.println("\nEnter second number : ");
+		System.out.println("\nEnter second number :  ");
 		int b1 = sc.nextInt();
 		
 		System.out.println("LCM of "+a1+" and "+b1+" is "+arithmeticOperations.lcm(a1,b1));
