@@ -25,11 +25,16 @@ public class ApplicationDemo {
 		 int n = in.nextInt();
 		 System.out.println("Factorial of " + n + " is " + arithmeticOperations.factorial(n));
 		 
+		 System.out.println("Enter a number to find if its armstrong: ");
+		 int arNum=in.nextInt();
+		 System.out.println(arNum + " is " + arithmeticOperations.armstrong(arNum));
+		 
+		 
+		 
 		 System.out.println("Enter the 2 numbers : ");
-		
 		 int num = in.nextInt();
 		 int number=in.nextInt();
-		 in.close();
+		
 		 
 		 //-------------------File Input -------------------------------
 		 
@@ -61,10 +66,9 @@ public class ApplicationDemo {
 
 		//calculate sum
 		 System.out.println("Enter the 2 numbers : ");
-		 Scanner inp = new Scanner(System.in);
-		 int num1 = inp.nextInt();
-		 int num2=inp.nextInt();
-		 inp.close();
+		 
+		 int num1 = in.nextInt();
+		 int num2=in.nextInt();
 		 
 		System.out.println("sum of " + num1 + "+" + num2 + " = " + arithmeticOperations.add(num1, num2));
 		System.out.println("remainder of " + num1 + "%" + num2 + " = " + arithmeticOperations.rem(num1, num2));
@@ -73,12 +77,10 @@ public class ApplicationDemo {
 		 
 		
 		//----armstrong-----------//
-		 System.out.println("Enter the number to check if armstrong: ");
-		 Scanner ar = new Scanner(System.in);
-		 int arNum=ar.nextInt();
-		 System.out.println(arNum + "is" + ar.armstrong(arNum));
+		
 
 		 System.out.println("-----demo------");
+		 in.close();
 
 	}
 
