@@ -176,5 +176,14 @@ public class ApplicationDemo {
 	 
 	      return isValidInteger;
 	   }
+	 
+	  //------------fibonacci----------------//
+	  System.out.println("\n enter number till where yoy want to print the fibonacci series ");
+	  try {
+		   n = Integer.parseInt(in1.readLine());
+		  } catch (Exception e) {}
+	  
+		  System.out.println(n + " is 0 1 " + arithmeticOperations.fibonacci(n));
+	  
 
 }
