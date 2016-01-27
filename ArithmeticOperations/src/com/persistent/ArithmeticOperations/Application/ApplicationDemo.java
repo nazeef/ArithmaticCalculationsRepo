@@ -71,8 +71,12 @@ public class ApplicationDemo {
 		System.out.println("quotient of " + num1 + "/" + num2 + " = " + arithmeticOperations.quot(num1, num2));
 		 
 		 
-		 
-		 
+		
+		//----armstrong-----------//
+		 System.out.println("Enter the number to check if armstrong: ");
+		 Scanner ar = new Scanner(System.in);
+		 int arNum=ar.nextInt();
+		 System.out.println(arNum + "is" + ar.armstrong(arNum));
 
 		 System.out.println("-----demo------");
 

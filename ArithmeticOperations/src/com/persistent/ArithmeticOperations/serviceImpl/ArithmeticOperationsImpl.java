@@ -45,6 +45,25 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	}
 	
 	
+	//----------armstrong------------//
+	public String armstrong(int n){
+		 int c=0,a,temp;
+		 temp=n; 
+		 while(n>0)  
+		    {  
+		    a=n%10;  
+		    n=n/10;  
+		    c=c+(a*a*a);  
+		    }  
+		    if(temp==c)  
+		    return "armstrong number";   
+		    else  
+		    	return "Not armstrong number";   
+		   } 
+		
+	}
+	
+	
 	//-----------remainder----------// 
 	public int rem(int num1, int num2) {
 		// TODO Auto-generated method stub
