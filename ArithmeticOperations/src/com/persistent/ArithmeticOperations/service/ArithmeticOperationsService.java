@@ -24,6 +24,9 @@ public interface ArithmeticOperationsService {
 	
 	public String palindrome(int number);
 	
+	public String armstrong(int n);
+	
+	
 	public int lcm(int num1, int num2);
 	
 	public int gcd(int num1, int num2);
