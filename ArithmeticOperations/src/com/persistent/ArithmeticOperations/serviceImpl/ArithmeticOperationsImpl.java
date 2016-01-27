@@ -46,7 +46,7 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	
 	
 	//----------armstrong------------//
-	public String armstrong(int n){
+	public boolean armstrong(int n){
 		 int c=0,a,temp;
 		 temp=n; 
 		 while(n>0)  
@@ -56,9 +56,9 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		    c=c+(a*a*a);  
 		    }  
 		    if(temp==c)  
-		    return " armstrong number";   
+		    return true;   
 		    else  
-		    	return " not armstrong number";   
+		    	return false;   
 		   } 
 		
 	
