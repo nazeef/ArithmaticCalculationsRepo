@@ -56,12 +56,12 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		    c=c+(a*a*a);  
 		    }  
 		    if(temp==c)  
-		    return "armstrong number";   
+		    return " armstrong number";   
 		    else  
-		    	return "Not armstrong number";   
+		    	return " not armstrong number";   
 		   } 
 		
-	}
+	
 	
 	
 	//-----------remainder----------// 
