@@ -17,79 +17,71 @@ public class ApplicationDemo {
 		
 		 Scanner in = new Scanner(System.in);
 		 ArithmeticOperationsImpl arithmeticOperations = new  ArithmeticOperationsImpl();
+		 int n,n1;
 		 
 
 		 //----------handling input-----------------------
 		 System.out.println("Enter a number to reverse: ");
-		 int n1 = in.nextInt();
-		 System.out.println("Reverse of " + n1 + " is " + arithmeticOperations.reverse(n1));
-		 System.out.println(n1 + " is " + arithmeticOperations.palindrome(n1));
+		 n = in.nextInt();
+		 System.out.println("Reverse of " + n + " is " + arithmeticOperations.reverse(n));
+		 
+		 System.out.println("Enter a number to find if its palindrome: ");
+		 n = in.nextInt();
+		 System.out.println(n + " is " + arithmeticOperations.palindrome(n));
 		 
 		 System.out.println("Enter a number to find the factorial: ");
-		 int n = in.nextInt();
+		 n = in.nextInt();
 		 System.out.println("Factorial of " + n + " is " + arithmeticOperations.factorial(n));
 		 
-		 System.out.println("Enter the 2 numbers : ");
-		
-		 int num = in.nextInt();
-		 int number=in.nextInt();
 
-		
+		 System.out.println("Enter a number to find if its armstrong: ");
+		 n=in.nextInt();
+		 System.out.println(n + " is " + arithmeticOperations.armstrong(n));
 		 
 		 
-		 //-------------------File Input -------------------------------
+		 System.out.println("Enter the 2 numbers to perform the basic operations on them : ");
+		 n = in.nextInt();
+		 n1=in.nextInt();
 		 
-		 FileReaderUtil fileReader = new FileReaderUtil();
-		 String fileName = "src\\demo.txt";
-		 arithmeticOperations.primeNumbers(Integer.parseInt(fileReader.readFile(fileName)));
-		
-		 //------------------------------------------------------
-		 arithmeticOperations.OddEven(number);
-		 
-		 System.out.println("product of " + num + "*" + number + " = " + arithmeticOperations.product(num,number));
+		 System.out.println("Addition : " + n + "+" + n1 + " = " + arithmeticOperations.add(n, n1));
+
+		 System.out.println("Product : " + n + "*" + n1 + " = " + arithmeticOperations.product(n,n1));
 		 
 		 try{
-			 System.out.println("division of " + num + "/" + number + " = " + arithmeticOperations.divide(num,number));
+			 System.out.println("Division : " + n + "/" + n1 + " = " + arithmeticOperations.divide(n,n1));
+			 
+			 System.out.println("Remainder :  " + n + "%" + n1 + " = " + arithmeticOperations.rem(n, n1));
+			 
+			 System.out.println("Quotient : " + n + "/" + n1 + " = " + arithmeticOperations.quot(n, n1));
 		 }
 		 catch(ArithmeticException ex){
-			 System.out.println("-------->   Caught Exception :"+ex.getMessage());
+			 System.out.println("Caught Exception : "+ex.getMessage());
 		 }
 		 
+		 System.out.println("Square root of " + n + " is " + arithmeticOperations.squareRoot(n)); 
+		 System.out.println("Square root of " + n1 + " is " + arithmeticOperations.squareRoot(n1));
 		 
-		 
-		 
-		 System.out.println("square root of " + number + " = " + arithmeticOperations.squareRoot(number));
 
-
-
-		// TODO Auto-generated method stub
-
-
-		//calculate sum
-		 System.out.println("Enter the 2 numbers : ");
-		 Scanner inp = new Scanner(System.in);
-		 int num1 = in.nextInt();
-		 int num2=in.nextInt();
-		 
-		System.out.println("sum of " + num1 + "+" + num2 + " = " + arithmeticOperations.add(num1, num2));
-		System.out.println("remainder of " + num1 + "%" + num2 + " = " + arithmeticOperations.rem(num1, num2));
-		System.out.println("quotient of " + num1 + "/" + num2 + " = " + arithmeticOperations.quot(num1, num2));
-		 
-		 in.close();
-		 // lcm of two numbers
+		 arithmeticOperations.OddEven(n);
+		 arithmeticOperations.OddEven(n1);
 		
-		Scanner sc = new Scanner(System.in);
+		 System.out.println("Printing prime nos , taking the input (range) from a file.");
+		 FileReaderUtil fileReader = new FileReaderUtil();
+		 String fileName = "C:\\Users\\scheweta_naik\\git\\ArithmaticCalculationsRepo\\ArithmeticOperations\\src\\demo.txt";
+		 arithmeticOperations.primeNumbers(Integer.parseInt(fileReader.readFile(fileName)));
 		
-		System.out.println("\n****Finding LCM of two numbers****\n\nEnter first number : ");
-		int a1 = sc.nextInt();
-		System.out.println("\nEnter second number :  ");
-		int b1 = sc.nextInt();
-		
+		 System.out.println("\n****Finding LCM of two numbers****\n\nEnter first number : ");
+		 int a1 = in.nextInt();
+		 System.out.println("\nEnter second number :  ");
+		 int b1 = in.nextInt();
+			
 		System.out.println("LCM of "+a1+" and "+b1+" is "+arithmeticOperations.lcm(a1,b1));
 
+	    in.close();
 		
-		sc.close();
-		 System.out.println("-----demo------");
+		
+		
+		
 
 	}
 
