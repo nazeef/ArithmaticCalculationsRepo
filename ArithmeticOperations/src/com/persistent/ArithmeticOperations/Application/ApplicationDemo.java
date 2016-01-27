@@ -55,7 +55,11 @@ public class ApplicationDemo {
 					 n = Integer.parseInt(inputData);
 					 System.out.println("Reverse of " + n + " is " + arithmeticOperations.reverse(n));
 					 System.out.println(n + " is " + arithmeticOperations.palindrome(n));
-					 
+					 boolean status=arithmeticOperations.armstrong(n);
+					 if(status==true)
+						 System.out.println("Armstrong number");
+					 else
+						 System.out.println("Not a Armstrong number");
 				 } catch (Throwable e) {
 					 System.out.println(e);
 				 }

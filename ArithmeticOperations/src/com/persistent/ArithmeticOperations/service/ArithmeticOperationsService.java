@@ -24,7 +24,7 @@ public interface ArithmeticOperationsService {
 	
 	public String palindrome(int number);
 	
-	public String armstrong(int n);
+	public boolean armstrong(int n);
 	
 	public int fibonacci(int count);
 	
