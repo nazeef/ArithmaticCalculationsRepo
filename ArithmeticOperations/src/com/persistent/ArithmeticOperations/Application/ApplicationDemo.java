@@ -1,5 +1,7 @@
 package com.persistent.ArithmeticOperations.Application;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 import com.persistent.ArithmeticOperations.serviceImpl.ArithmeticOperationsImpl;
@@ -11,10 +13,12 @@ public class ApplicationDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
+	
+		
 		 Scanner in = new Scanner(System.in);
 		 ArithmeticOperationsImpl arithmeticOperations = new  ArithmeticOperationsImpl();
 		 
+
 		 //----------handling input-----------------------
 		 System.out.println("Enter a number to reverse: ");
 		 int n1 = in.nextInt();
@@ -25,16 +29,13 @@ public class ApplicationDemo {
 		 int n = in.nextInt();
 		 System.out.println("Factorial of " + n + " is " + arithmeticOperations.factorial(n));
 		 
-		 System.out.println("Enter a number to find if its armstrong: ");
-		 int arNum=in.nextInt();
-		 System.out.println(arNum + " is " + arithmeticOperations.armstrong(arNum));
-		 
-		 
-		 
 		 System.out.println("Enter the 2 numbers : ");
+		
 		 int num = in.nextInt();
 		 int number=in.nextInt();
+
 		
+		 
 		 
 		 //-------------------File Input -------------------------------
 		 
@@ -66,7 +67,7 @@ public class ApplicationDemo {
 
 		//calculate sum
 		 System.out.println("Enter the 2 numbers : ");
-		 
+		 Scanner inp = new Scanner(System.in);
 		 int num1 = in.nextInt();
 		 int num2=in.nextInt();
 		 
@@ -74,13 +75,21 @@ public class ApplicationDemo {
 		System.out.println("remainder of " + num1 + "%" + num2 + " = " + arithmeticOperations.rem(num1, num2));
 		System.out.println("quotient of " + num1 + "/" + num2 + " = " + arithmeticOperations.quot(num1, num2));
 		 
-		 
-		
-		//----armstrong-----------//
-		
-
-		 System.out.println("-----demo------");
 		 in.close();
+		 // lcm of two numbers
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("\n****Finding LCM of two numbers****\n\nEnter first number : ");
+		int a1 = sc.nextInt();
+		System.out.println("\nEnter second number :  ");
+		int b1 = sc.nextInt();
+		
+		System.out.println("LCM of "+a1+" and "+b1+" is "+arithmeticOperations.lcm(a1,b1));
+
+		
+		sc.close();
+		 System.out.println("-----demo------");
 
 	}
 
