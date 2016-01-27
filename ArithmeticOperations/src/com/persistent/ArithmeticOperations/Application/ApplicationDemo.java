@@ -101,9 +101,9 @@ public class ApplicationDemo {
 						 throw new MyException("Invalid input.");	 
 					 n = Integer.parseInt(inputData);
 					 n1 = Integer.parseInt(inputData2);
-					System.out.println("Addition :  " + n + "+" + n1 + " = " + arithmeticOperations.add(n, n1));
-					System.out.println("Remainder : " + n + "%" + n1 + " = " + arithmeticOperations.rem(n, n1));
-					System.out.println("Quotient : " + n + "/" + n1 + " = " + arithmeticOperations.quot(n, n1));
+					 System.out.println("Addition :  " + n + "+" + n1 + " = " + arithmeticOperations.add(n, n1));
+					 System.out.println("Remainder : " + n + "%" + n1 + " = " + arithmeticOperations.rem(n, n1));
+					 System.out.println("Quotient : " + n + "/" + n1 + " = " + arithmeticOperations.quot(n, n1));
 						 
 					 
 				 } catch (Throwable e) {
@@ -154,7 +154,7 @@ public class ApplicationDemo {
 		 }
 }while(choice<7);
 		
-System.out.println("cgfhhhhh");
+
 		
 }
 	
@@ -167,7 +167,7 @@ System.out.println("cgfhhhhh");
 	      }
 	      catch (NumberFormatException ex)
 	      {
-	         // s is not an integer
+	         System.out.println(ex);
 	      }
 	 
 	      return isValidInteger;
