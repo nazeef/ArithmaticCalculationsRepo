@@ -1,5 +1,8 @@
 package com.persistent.ArithmeticOperations.Application;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
@@ -11,37 +14,49 @@ public class ApplicationDemo {
 
 	/**
 	 * @param args
+	 * @throws IOException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 	
-		
-		 Scanner in = new Scanner(System.in);
-		 ArithmeticOperationsImpl arithmeticOperations = new  ArithmeticOperationsImpl();
-		 int n,n1;
+		 BufferedReader in1 = new BufferedReader(new InputStreamReader(System.in));
+         ArithmeticOperationsImpl arithmeticOperations = new  ArithmeticOperationsImpl();
+		 int n=0,n1=0;
 		 
-
+		 
 		 //----------handling input-----------------------
 		 System.out.println("Enter a number to reverse: ");
-		 n = in.nextInt();
+		 try {
+			n = Integer.parseInt(in1.readLine());
+		 } catch (Exception e) {}
 		 System.out.println("Reverse of " + n + " is " + arithmeticOperations.reverse(n));
 		 
+		 
+		 
 		 System.out.println("Enter a number to find if its palindrome: ");
-		 n = in.nextInt();
+		 try {
+				n = Integer.parseInt(in1.readLine());
+			 } catch (Exception e) {}
 		 System.out.println(n + " is " + arithmeticOperations.palindrome(n));
 		 
 		 System.out.println("Enter a number to find the factorial: ");
-		 n = in.nextInt();
+		 try {
+				n = Integer.parseInt(in1.readLine());
+			 } catch (Exception e) {}
 		 System.out.println("Factorial of " + n + " is " + arithmeticOperations.factorial(n));
 		 
 
 		 System.out.println("Enter a number to find if its armstrong: ");
-		 n=in.nextInt();
+		 try {
+				n = Integer.parseInt(in1.readLine());
+			 } catch (Exception e) {}
 		 System.out.println(n + " is " + arithmeticOperations.armstrong(n));
 		 
 		 
 		 System.out.println("Enter the 2 numbers to perform the basic operations on them : ");
-		 n = in.nextInt();
-		 n1=in.nextInt();
+		 try {
+				n = Integer.parseInt(in1.readLine());
+				n1 = Integer.parseInt(in1.readLine());
+			 } catch (Exception e) {}
 		 
 		 System.out.println("Addition : " + n + "+" + n1 + " = " + arithmeticOperations.add(n, n1));
 
@@ -70,14 +85,17 @@ public class ApplicationDemo {
 		 String fileName = "C:\\Users\\scheweta_naik\\git\\ArithmaticCalculationsRepo\\ArithmeticOperations\\src\\demo.txt";
 		 arithmeticOperations.primeNumbers(Integer.parseInt(fileReader.readFile(fileName)));
 		
-		 System.out.println("\n****Finding LCM of two numbers****\n\nEnter first number : ");
-		 int a1 = in.nextInt();
-		 System.out.println("\nEnter second number :  ");
-		 int b1 = in.nextInt();
+		 System.out.println("\nLCM of 2 nos. : \n\nEnter first number : ");
+		 try {
+				n = Integer.parseInt(in1.readLine());
+				System.out.println("\nEnter second number :  ");
+				n1 = Integer.parseInt(in1.readLine());
+			 } catch (Exception e) {}
+		
 			
-		System.out.println("LCM of "+a1+" and "+b1+" is "+arithmeticOperations.lcm(a1,b1));
+		System.out.println("LCM of "+n+" and "+n1+" is "+arithmeticOperations.lcm(n,n1));
 
-	    in.close();
+	    in1.close();
 		
 		
 		
