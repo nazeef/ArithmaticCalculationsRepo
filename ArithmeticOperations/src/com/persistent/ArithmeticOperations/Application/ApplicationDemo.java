@@ -58,9 +58,9 @@ public class ApplicationDemo {
 		//calculate sum
 		 System.out.println("Enter the 2 numbers : ");
 		 Scanner inp = new Scanner(System.in);
-		 int num1 = in.nextInt();
-		 int num2=in.nextInt();
-		 in.close();
+		 int num1 = inp.nextInt();
+		 int num2=inp.nextInt();
+		 inp.close();
 		 
 		System.out.println("sum of " + num1 + "+" + num2 + " = " + arithmeticOperations.add(num1, num2));
 		System.out.println("remainder of " + num1 + "%" + num2 + " = " + arithmeticOperations.rem(num1, num2));
