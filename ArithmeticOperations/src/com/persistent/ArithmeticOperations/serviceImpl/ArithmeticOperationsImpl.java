@@ -61,7 +61,17 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		    	return " not armstrong number";   
 		   } 
 		
-	
+	//-------------fibonacci---------------//
+		public int fibonacci(int count){
+			  if(count>0){    
+			         n3 = n1 + n2;    
+			         n1 = n2;    
+			         n2 = n3;    
+			         System.out.print(" "+n3);   
+			         fibonacci(count-1);    
+			     }    
+			
+		}
 	
 	
 	//-----------remainder----------// 
