@@ -39,7 +39,7 @@ public class ApplicationDemo {
 		 //-------------------File Input -------------------------------
 		 
 		 FileReaderUtil fileReader = new FileReaderUtil();
-		 String fileName = "C:\\Users\\nazeef_shaikh\\git\\ArithmaticCalculationsRepof\\ArithmeticOperations\\src\\demo.txt";
+		 String fileName = "src\\demo.txt";
 		 arithmeticOperations.primeNumbers(Integer.parseInt(fileReader.readFile(fileName)));
 		
 		 //------------------------------------------------------
