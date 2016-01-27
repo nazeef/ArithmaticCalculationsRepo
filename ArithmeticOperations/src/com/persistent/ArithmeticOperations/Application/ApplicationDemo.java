@@ -3,6 +3,7 @@ package com.persistent.ArithmeticOperations.Application;
 import java.util.Scanner;
 
 import com.persistent.ArithmeticOperations.serviceImpl.ArithmeticOperationsImpl;
+import com.persistent.ArithmeticOperations.util.FileReaderUtil;
 
 public class ApplicationDemo {
 
@@ -29,11 +30,14 @@ public class ApplicationDemo {
 		 int num = in.nextInt();
 		 int number=in.nextInt();
 		 in.close();
-		 //--------------------------------------------------
 		 
+		 //-------------------File Input -------------------------------
+		 
+		 FileReaderUtil fileReader = new FileReaderUtil();
+		 String fileName = "C:\\Users\\nazeef_shaikh\\git\\ArithmaticCalculationsRepof\\ArithmeticOperations\\src\\demo.txt";
+		 arithmeticOperations.primeNumbers(Integer.parseInt(fileReader.readFile(fileName)));
 		
-		 arithmeticOperations.primeNumbers(num);
-		
+		 //------------------------------------------------------
 		 arithmeticOperations.OddEven(number);
 		 
 		 System.out.println("product of " + num + "*" + number + " = " + arithmeticOperations.product(num,number));
