@@ -173,4 +173,7 @@ public class ApplicationDemo {
 	      return isValidInteger;
 	   }
 
+	public void kyakaru(){
+		System.out.println("this is it");
+	}
 }
