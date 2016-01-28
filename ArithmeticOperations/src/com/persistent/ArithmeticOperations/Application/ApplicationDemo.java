@@ -146,6 +146,15 @@ public class ApplicationDemo {
 						 if(n1==0)
 							 throw new MyException("Divide by zero.");
 						 System.out.println("Division : " + n + "/" + n1 + " = " + arithmeticOperations.divide(n,n1));
+					 
+						  //------------fibonacci----------------//
+						  System.out.println("\n enter number till where you want to print the fibonacci series ");
+						  try {
+							   n = Integer.parseInt(in1.readLine());
+							  } 
+						  catch (Exception e) {}
+						  System.out.println(n + " is 0 1 " + arithmeticOperations.fibonacci(n));
+					 
 					 }
 					 catch(Throwable ex){
 						 System.out.println(ex);
@@ -166,6 +175,11 @@ public class ApplicationDemo {
 		
 }
 	
+	
+	
+	  
+		
+	
 	public static boolean isInteger(String s) {
 	      boolean isValidInteger = false;
 	      try
@@ -181,13 +195,7 @@ public class ApplicationDemo {
 	      return isValidInteger;
 	   }
 	 
-	  //------------fibonacci----------------//
-	  System.out.println("\n enter number till where yoy want to print the fibonacci series ");
-	  try {
-		   n = Integer.parseInt(in1.readLine());
-		  } catch (Exception e) {}
-	  
-		  System.out.println(n + " is 0 1 " + arithmeticOperations.fibonacci(n));
+
 	  
 
 }
