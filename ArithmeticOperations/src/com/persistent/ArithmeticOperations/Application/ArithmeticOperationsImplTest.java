@@ -39,4 +39,9 @@ public class ArithmeticOperationsImplTest {
 	public void testquot() {
 		assertEquals(1, arithmaticOp.quot(45, 40));
 	}
+	
+	@Test
+	public void testfactorial() {
+		assertEquals(120, arithmaticOp.factorial(5));
+	}
 }
