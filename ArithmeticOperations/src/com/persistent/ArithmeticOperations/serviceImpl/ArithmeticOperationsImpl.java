@@ -128,12 +128,12 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 
 
 	//-----------palindrome---------------//
-	public String palindrome(int number) {
+	public boolean palindrome(int number) {
 		// TODO Auto-generated method stub
 		if(number==reverse(number))
-			return "a Palindrome";
+			return true;
 		else
-			return "not a Palindrome";
+			return false;
 	}
 
 	//---- Least Common Multiple ----\\
