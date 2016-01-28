@@ -25,7 +25,7 @@ public class ApplicationDemo {
 		 String inputData,inputData2;
 		 int choice=0;
 		 do{
-			 
+			 // Is this really required? -----//
 		 System.out.println("Please Select Choice from below\n");
 		 System.out.println("1. Revese and check for palindrom number");
 		 System.out.println("2. Find Factorial of a number");
@@ -157,10 +157,10 @@ public class ApplicationDemo {
 						 System.out.print("Enter number upto which Fibonacci series to print: ");
 					        int number = new Scanner(System.in).nextInt();
 					        System.out.println("\n\nFibonacci series upto " + number +" numbers : ");
-					        //printing Fibonacci series upto number
-					        for(int i=1; i<=number; i++){
-					            System.out.print(arithmeticOperations.fibonacciRecusion(i) +" ");
-					        }
+					     //printing Fibonacci series upto number
+					     for(int i=1; i<=number; i++){
+					        System.out.print(arithmeticOperations.fibonacciRecusion(i) +" ");
+					      }
 					        //-------------end fibonacci------------//
 					        
 					        
