@@ -90,11 +90,11 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 	
 	
 	//------ classification between odd and even ------ //
-	public void OddEven(int number){
+	public boolean OddEven(int number){
 		if(number % 2 == 0)
-			System.out.println("\n"+ number + " is Even");
+			return true;
 		else
-			System.out.println("\n"+ number + " is Odd");
+			return false;
 	}
 	
 	//------division of numbers------------//

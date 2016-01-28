@@ -135,7 +135,11 @@ public class ApplicationDemo {
 						 throw new MyException("Invalid input.");	 
 					 n = Integer.parseInt(inputData);
 					 n1 = Integer.parseInt(inputData2);
-					 arithmeticOperations.OddEven(n);
+					 boolean oddEvenStatus=arithmeticOperations.OddEven(n);
+					 if(oddEvenStatus)
+						 System.out.println(n + " is Even");
+					 else
+						 System.out.println(n + " is odd");
 					 System.out.println("Product : " + n + "*" + n1 + " = " + arithmeticOperations.product(n,n1));
 					 System.out.println("Square root of " + n + " = " + arithmeticOperations.squareRoot(n));
 					 try{
