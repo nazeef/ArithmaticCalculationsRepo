@@ -1,5 +1,6 @@
 package com.persistent.ArithmeticOperations.serviceImpl;
 
+import com.persistent.ArithmeticOperations.exceptions.InvalidInputException;
 import com.persistent.ArithmeticOperations.service.ArithmeticOperationsService;
 
 public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
@@ -16,27 +17,35 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 
 	//---------generate prime numbers between 1 and num-----------
 	
-	public void primeNumbers(int number) {
-		
-		int start=2, end=number, counter=0; 
-		boolean isPrime;
-		
-		System.out.print("Prime numbers between 1 and "+number+" :");
-		
-		for(int num=start; num<=end; num++){           // loop through  1 to number
-			isPrime=true;
+		public void primeNumbers(int number) {
 			
-			for(counter=2; counter<=num/2; counter++){
-				if(num%counter == 0){
-					isPrime = false;                  // if divisible by other numbers
-					break;
-				}
+			int start=2, end=number, counter=0; 
+			boolean isPrime;
+			try{
+			if(number<3)
+				throw new InvalidInputException("Prime Number: Invalid Input error :  Please provide a number greater than 1");
+			}
+			catch(InvalidInputException ex){
+				System.out.println(ex.getMessage());
+				return;
 			}
 			
-			if(isPrime==true)                        
-				System.out.print("  "+num);
+			System.out.print("Prime numbers between 1 and "+number+" :");
+			
+			for(int num=start; num<=end; num++){           // loop through  1 to number
+				isPrime=true;
+				
+				for(counter=2; counter<=num/2; counter++){
+					if(num%counter == 0){
+						isPrime = false;                  // if divisible by other numbers
+						break;
+					}
+				}
+				
+				if(isPrime==true)                        
+					System.out.print("  "+num);
+			}
 		}
-	}
 
 	//-----------add--------------//
 	public int add(int num1, int num2) {
