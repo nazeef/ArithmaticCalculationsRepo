@@ -26,7 +26,7 @@ public interface ArithmeticOperationsService {
 	
 	public boolean armstrong(int n);
 	
-	public int fibonacci(int count);
+	public int fibonacciRecusion(int number);
 	
 	public int lcm(int num1, int num2);
 	

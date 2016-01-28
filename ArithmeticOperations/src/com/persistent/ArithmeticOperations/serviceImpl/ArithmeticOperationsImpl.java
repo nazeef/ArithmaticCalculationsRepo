@@ -62,16 +62,13 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 		   } 
 		
 	//-------------fibonacci---------------//
-		public int fibonacci(int count){
-			  if(count>0){    
-			         n3 = n1 + n2;    
-			         n1 = n2;    
-			         n2 = n3;    
-			         System.out.print(" "+n3);   
-			         fibonacci(count-1);    
-			     }    
-			
-		}
+	public int fibonacciRecusion(int number){
+        if(number == 1 || number == 2){
+            return 1;
+        }
+ 
+        return fibonacciRecusion(number-1) + fibonacciRecusion(number -2); //tail recursion
+    }
 	
 	
 	//-----------remainder----------// 

@@ -147,13 +147,20 @@ public class ApplicationDemo {
 							 throw new MyException("Divide by zero.");
 						 System.out.println("Division : " + n + "/" + n1 + " = " + arithmeticOperations.divide(n,n1));
 					 
-						  //------------fibonacci----------------//
-						  System.out.println("\n enter number till where you want to print the fibonacci series ");
-						  try {
-							   n = Integer.parseInt(in1.readLine());
-							  } 
-						  catch (Exception e) {}
-						  System.out.println(n + " is 0 1 " + arithmeticOperations.fibonacci(n));
+						  
+						 
+						 //------------fibonacci--------------------//
+						 System.out.print("Enter number upto which Fibonacci series to print: ");
+					        int number = new Scanner(System.in).nextInt();
+					        System.out.println("\n\nFibonacci series upto " + number +" numbers : ");
+					        //printing Fibonacci series upto number
+					        for(int i=1; i<=number; i++){
+					            System.out.print(arithmeticOperations.fibonacciRecusion(i) +" ");
+					        }
+					        //-------------end fibonacci------------//
+					        
+					        
+					        
 					 
 					 }
 					 catch(Throwable ex){
