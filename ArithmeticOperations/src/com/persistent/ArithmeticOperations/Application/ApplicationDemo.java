@@ -27,12 +27,12 @@ public class ApplicationDemo {
 		 do{
 			 // Is this really required? -----//
 		 System.out.println("Please Select Choice from below\n");
-		 System.out.println("1. Revese and check for palindrom number");
+		 System.out.println("1. Revese and check for palindrom number, armstrong");
 		 System.out.println("2. Find Factorial of a number");
 		 System.out.println("3. Find LCM of two numbers");
 		 System.out.println("4. Perform some random operations on two numbers");
 		 System.out.println("5. Prime number (input from file)");
-		 System.out.println("6. Some more random operations on two numbers");
+		 System.out.println("6. Some more random operations on two numbers, fibonacci series");
 		 System.out.println("7. Exit\n");
 							
 		 try {
@@ -54,7 +54,11 @@ public class ApplicationDemo {
 						 throw new MyException("Invalid input.");	 
 					 n = Integer.parseInt(inputData);
 					 System.out.println("Reverse of " + n + " is " + arithmeticOperations.reverse(n));
-					 System.out.println(n + " is " + arithmeticOperations.palindrome(n));
+					 if(arithmeticOperations.palindrome(n)==true)
+						 System.out.println("Palindrome number");
+					 else
+						 System.out.println("Not a Palindrome number");
+					
 
 					 
 				 } catch (Exception  e) {
