@@ -22,7 +22,7 @@ public interface ArithmeticOperationsService {
 	
 	public int reverse(int number);
 	
-	public String palindrome(int number);
+	public boolean palindrome(int number);
 	
 	public boolean armstrong(int n);
 	

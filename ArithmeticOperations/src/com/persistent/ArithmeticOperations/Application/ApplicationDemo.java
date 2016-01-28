@@ -54,7 +54,11 @@ public class ApplicationDemo {
 						 throw new MyException("Invalid input.");	 
 					 n = Integer.parseInt(inputData);
 					 System.out.println("Reverse of " + n + " is " + arithmeticOperations.reverse(n));
-					 System.out.println(n + " is " + arithmeticOperations.palindrome(n));
+					 if(arithmeticOperations.palindrome(n)==true)
+						 System.out.println("Palindrome number");
+					 else
+						 System.out.println("Not a Palindrome number");
+					
 
 					 
 				 } catch (Exception  e) {

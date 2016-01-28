@@ -44,4 +44,11 @@ public class ArithmeticOperationsImplTest {
 	public void testfactorial() {
 		assertEquals(120, arithmaticOp.factorial(5));
 	}
+	
+	
+	
+	@Test
+	public void testPalindrome() {
+		assertEquals(true, arithmaticOp.palindrome(121));
+	}
 }
