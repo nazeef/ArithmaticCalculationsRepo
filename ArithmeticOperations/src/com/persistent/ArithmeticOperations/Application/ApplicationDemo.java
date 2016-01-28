@@ -41,7 +41,7 @@ public class ApplicationDemo {
 				 throw new MyException("Invalid choice.");
 			 else
 				 choice = Integer.parseInt(inputData);
-		} catch (Throwable e) {
+		} catch (Exception e) {
 			
 		} 
 		 
@@ -55,6 +55,10 @@ public class ApplicationDemo {
 					 n = Integer.parseInt(inputData);
 					 System.out.println("Reverse of " + n + " is " + arithmeticOperations.reverse(n));
 					 System.out.println(n + " is " + arithmeticOperations.palindrome(n));
+
+					 
+				 } catch (Exception  e) {
+
 					 boolean status=arithmeticOperations.armstrong(n);
 					 if(status==true)
 						 System.out.println("Armstrong number");
@@ -74,7 +78,7 @@ public class ApplicationDemo {
 					 n = Integer.parseInt(inputData);
 					 System.out.println("Factorial of " + n + " is " + arithmeticOperations.factorial(n));
 					 
-				 } catch (Throwable e) {
+				 } catch (Exception  e) {
 					 System.out.println(e);
 				 }break;
 			 
@@ -90,7 +94,7 @@ public class ApplicationDemo {
 					 n1 = Integer.parseInt(inputData2);
 					 System.out.println("LCM of "+n+" and "+n1+" is "+arithmeticOperations.lcm(n,n1));
 					 
-				 } catch (Throwable e) {
+				 } catch (Exception  e) {
 					 System.out.println(e);
 				 }
 			
@@ -110,7 +114,7 @@ public class ApplicationDemo {
 					 System.out.println("Quotient : " + n + "/" + n1 + " = " + arithmeticOperations.quot(n, n1));
 						 
 					 
-				 } catch (Throwable e) {
+				 } catch (Exception  e) {
 					 System.out.println(e);
 				 }
 			
@@ -163,12 +167,12 @@ public class ApplicationDemo {
 					        
 					 
 					 }
-					 catch(Throwable ex){
+					 catch(Exception  ex){
 						 System.out.println(ex);
 					 }
 						 
 					 
-				 } catch (Throwable e) {
+				 } catch (Exception  e) {
 					 System.out.println(e);
 				 }
 				 
@@ -189,8 +193,7 @@ public class ApplicationDemo {
 	
 	public static boolean isInteger(String s) {
 	      boolean isValidInteger = false;
-	      try
-	      {
+	      try	      {
 	         Integer.parseInt(s);
 	         isValidInteger = true;
 	      }
@@ -199,7 +202,7 @@ public class ApplicationDemo {
 	         System.out.println(ex);
 	      }
 	 
-	      return isValidInteger;
+      return isValidInteger;
 	   }
 	 
 
